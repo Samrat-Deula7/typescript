@@ -41,3 +41,27 @@ console.log(amount)
 let ispass:boolean=true
 ispass=false
 console.log(ispass)
+
+// Unoiun Type annotation ( | )
+
+//  Its an type of annotation that return value can hold multiple possible types
+
+// For example:
+
+let tax:number | string=10
+
+tax=20
+tax="20 rs"
+
+
+// Literal value type
+
+let requestStatus:'pending'|'success'|'error'='pending';
+// Now requestStatus can only contain 'pending' , 'success' or 'error' 
+// TS will throw error when we try to put any other string value other then the three mentioned above
+
+requestStatus='pending' // ✅
+requestStatus='success' // ✅
+requestStatus='error' // ✅ 
+// requestStatus='Namuna' // ❌ This will throw an error :Type '"Namuna"' is not assignable to type '"pending" | "success" | "error"'.
+
