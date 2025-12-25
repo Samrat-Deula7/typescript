@@ -5,6 +5,7 @@ import { setupCounter } from './counter.ts'
 import './tutorial.ts'
 import './function.ts'
 import './Challenge1.ts'
+import './Challenge2.ts'
 import './typeAlias.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
