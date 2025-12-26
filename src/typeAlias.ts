@@ -34,3 +34,42 @@ function createUser(user: User):User{
 
   return user;
 }
+
+
+// Intersection type in union.
+// -> Way to combine multiple types into one.
+
+type Book={id:number; name:string; price:number};
+type DiscountedBook=Book & { discount: number } ;
+
+const book1:Book={
+    id:1,
+    name:'How to tame a dragon',
+    price:15,
+}
+
+const book2:Book={
+    id:2,
+    name:'The secret life of unicorns',
+    price:18,
+}
+
+const discountedBook: DiscountedBook = {
+  id: 3,
+  name: 'Game of throwns',
+  price: 20,
+  discount: 0.15,
+};
+
+
+
+// Type Alias also supports computed properties.
+// Those properties which is defined dynamically
+
+const propName='age';
+
+type Animal ={
+    [propName]:number;
+}
+
+let tiger:Animal ={[propName]:4}

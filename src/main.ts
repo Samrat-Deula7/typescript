@@ -7,6 +7,7 @@ import './function.ts'
 import './Challenge1.ts'
 import './Challenge2.ts'
 import './typeAlias.ts'
+import './Interface.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
