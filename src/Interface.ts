@@ -52,18 +52,49 @@ console.log(result);
 console.log(deepWork.printSomething(55));
 
 
-// ## Interface merging
+// ## Interface merging and Extending  Interface 
 
 interface Person{
     name:string;
     getDetails():string;
 }
 
+// Merging interface
+
+interface Person{
+    age:number;
+}
+
+// Extending interface
+
+interface Employee extends Person{
+    employeeId:number;
+}
 interface DogOwner{
     dogName:string;
     getDogDetails():string;
 }
 
-const person:Person{
-    name:'Samrat'
+const person:Person={
+    name:'Samrat',
+    age:20,
+    getDetails() {
+        return `Name:${this.name}, Age:${this.age}`;
+    },
 }
+
+const employee: Employee={
+    name:'Sanjay',
+    age:29,
+    employeeId:101,
+    getDetails() {
+        return `Employee-id:${this.employeeId}, Name:${this.name}, Age:${this.age}`;
+    },
+}
+console.log(person.getDetails());
+console.log(employee.getDetails())
+
+
+
+
+
