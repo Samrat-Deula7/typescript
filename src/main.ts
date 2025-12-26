@@ -6,6 +6,7 @@ import './tutorial.ts'
 import './function.ts'
 import './Challenge1.ts'
 import './Challenge2.ts'
+import './Challenge3.ts'
 import './typeAlias.ts'
 import './Interface.ts'
 

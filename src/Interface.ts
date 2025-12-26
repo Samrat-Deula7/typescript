@@ -52,3 +52,18 @@ console.log(result);
 console.log(deepWork.printSomething(55));
 
 
+// ## Interface merging
+
+interface Person{
+    name:string;
+    getDetails():string;
+}
+
+interface DogOwner{
+    dogName:string;
+    getDogDetails():string;
+}
+
+const person:Person{
+    name:'Samrat'
+}
