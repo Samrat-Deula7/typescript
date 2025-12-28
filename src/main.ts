@@ -10,6 +10,7 @@ import './Challenge3.ts'
 import './Challenge4.ts'
 import './typeAlias.ts'
 import './Interface.ts'
+import './Touple.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>

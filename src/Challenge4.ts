@@ -38,4 +38,14 @@ function getEmployee(): Person | DogOwner | Manager {
 }
 
 const employee: Person | DogOwner | Manager = getEmployee();
-console.log(employee);
+console.log(employee.name);
+
+function isManager(obj: Person | DogOwner | Manager):obj is Manager {
+    return "managePeople" in obj;
+}
+
+console.log(isManager(employee))
+
+if(isManager(employee)){
+    employee.delegateTasks();
+}
