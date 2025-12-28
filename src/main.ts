@@ -8,9 +8,11 @@ import './Challenge1.ts'
 import './Challenge2.ts'
 import './Challenge3.ts'
 import './Challenge4.ts'
+import './Challenge5.ts'
 import './typeAlias.ts'
 import './Interface.ts'
 import './Touple.ts'
+import './Enum.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
