@@ -13,6 +13,7 @@ import './typeAlias.ts'
 import './Interface.ts'
 import './Touple.ts'
 import './Enum.ts'
+import './Type-Assertion.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
