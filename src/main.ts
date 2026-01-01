@@ -16,6 +16,8 @@ import './Enum.ts'
 import './Type-Assertion.ts'
 import './Type-unknown.ts'
 import './Type-Never.ts'
+import './modulesInTS.ts'
+import './importingMoudles.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
