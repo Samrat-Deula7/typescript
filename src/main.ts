@@ -14,6 +14,8 @@ import './Interface.ts'
 import './Touple.ts'
 import './Enum.ts'
 import './Type-Assertion.ts'
+import './Type-unknown.ts'
+import './Type-Never.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
