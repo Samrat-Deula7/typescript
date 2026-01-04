@@ -18,6 +18,9 @@ import './Type-unknown.ts'
 import './Type-Never.ts'
 import './modulesInTS.ts'
 import './importingMoudles.ts'
+import './Type-Guarding.ts'
+import './DiscriminatedUnions.ts'
+import './Generic.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
