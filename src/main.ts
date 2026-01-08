@@ -21,6 +21,7 @@ import './importingMoudles.ts'
 import './Type-Guarding.ts'
 import './DiscriminatedUnions.ts'
 import './Generic.ts'
+import './fetchData.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
