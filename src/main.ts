@@ -23,6 +23,8 @@ import './Type-Guarding.ts'
 import './DiscriminatedUnions.ts'
 import './Generic.ts'
 import './fetchData.ts'
+import './Zod.ts'
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
