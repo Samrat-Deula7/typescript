@@ -9,6 +9,7 @@ import './Challenge2.ts'
 import './Challenge3.ts'
 import './Challenge4.ts'
 import './Challenge5.ts'
+import "./Challenge6.ts";
 import './typeAlias.ts'
 import './Interface.ts'
 import './Touple.ts'
@@ -22,7 +23,6 @@ import './Type-Guarding.ts'
 import './DiscriminatedUnions.ts'
 import './Generic.ts'
 import './fetchData.ts'
-
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
