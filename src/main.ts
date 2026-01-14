@@ -24,6 +24,10 @@ import './DiscriminatedUnions.ts'
 import './Generic.ts'
 import './fetchData.ts'
 import './Zod.ts'
+import './DeclarationFile.ts'
+import './Class.ts'
+import './ClassGetSet.ts'
+import './ClassInterface.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
