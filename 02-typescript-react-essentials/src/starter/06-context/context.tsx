@@ -4,7 +4,7 @@ import React, { createContext,useContext,useState } from "react";
 type Theme ='light'|'dark'|'system';
 type ThemeProviderState={
     theme:Theme;
-    setTheme:(Theme:Theme)=>void;
+    setTheme:(theme:Theme)=>void;
 }
 
 type ThemeProviderProps={
@@ -13,8 +13,11 @@ type ThemeProviderProps={
 }
 const ThemeProviderContext=createContext<ThemeProviderState | undefined>(undefined)
 
+
+
+
 export function ThemeProvider({children,defaultTheme="system"}:ThemeProviderProps){
-    const [theme,setTheme]=useState<Theme>();
+    const [theme, setTheme] = useState<Theme>(defaultTheme);
     return( <ThemeProviderContext.Provider value={{theme,setTheme}}>
         {children}
     </ThemeProviderContext.Provider>)
