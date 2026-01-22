@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-const url = "https://www.course-api.com/react-tours-project";
 import { type Tour,tourSchema } from "./types";
 
 function Component() {
@@ -16,12 +15,7 @@ function Component() {
           throw new Error(`Failed to fetch tours...`)
         }
         const rawData:Tour[] =await response.json()
-       const result =tourSchema.array().safeParse(rawData)
-
-       if(!result.success){
-        console.log(result.error)
-        throw new Error(`Failed to parse tours`)
-       }
+     
         setTours(result.data);
       } catch (error) {
         const message =error instanceof Error ? error.message :"There was an error...";
