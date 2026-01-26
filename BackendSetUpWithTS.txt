@@ -54,7 +54,7 @@ Step 9:
 
 Step 10: Run the Application
 
-To run in development mode with auto-restarts:
+To run in development mode with auto-restarts: This code is for development in the local network then after the code is completed the following code is written to send the app into production.
 npm run dev
 
 To build for production (compiles .ts to .js in the dist folder):
